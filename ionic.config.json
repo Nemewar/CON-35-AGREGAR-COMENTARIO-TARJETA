@@ -1,0 +1,7 @@
+{
+  "name": "CON-35-agregar-comentario-tarjeta",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
