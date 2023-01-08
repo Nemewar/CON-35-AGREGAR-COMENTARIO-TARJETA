@@ -1,0 +1,119 @@
+
+
+
+ion-content{
+    font-family: 'Abyssinica SIL', serif;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+ion-content p{
+    line-height: 24px;
+}
+
+ion-toolbar {
+    --color: #ffffff;
+    --background: #ffffff;
+}
+
+
+ion-buttons,ion-button{
+    margin: 0;
+}
+
+ion-buttons p{
+    color: gray;
+    padding: 0;
+    margin: 0;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.b-start{
+    margin-left: 16px;
+    margin-top: 24px;
+}
+
+.b-end{
+    margin-right: 16px;
+    margin-top: 24px;
+}
+
+.comentario-principal{
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.comentario-principal .autor{
+    font-weight: bold;
+}
+
+.comentario-principal img{
+    height: 24px;
+}
+
+.img-facturacion{
+    display: flex;
+    gap: 16px;
+}
+
+.img-facturacion img{
+   height: 64px;
+}
+
+.comentario-principal-derecha{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.comentario-principal-derecha p{
+    margin: 0;
+}
+
+.main{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer{
+    border-top: 0.5px solid rgba(128, 128, 128, 0.055);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer p{
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-bottom: 40px;
+    color: gray;
+}
+
+.time-comment{
+    color: gray;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+
+.etiqueta-autor{
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: 4px;
+}
+
+.etiqueta-autor-ge{
+    background-color: #023AFF;
+    border-radius: 20px;
+    padding: 4px;
+    color: white;
+}
+
+.response{
+    color: gray;
+}

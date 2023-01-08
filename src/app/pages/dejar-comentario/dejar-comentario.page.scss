@@ -1,0 +1,37 @@
+ion-content{
+    min-height: 100vh;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.main p{
+    margin: 0;
+    padding: 0;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-top: 24px;
+    color: gray;
+    cursor: pointer;
+}
+
+.main .iconos{
+    display: flex;
+    gap: 24px;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+.main .iconos img{
+    height: 20px;
+}
+
+
+
+.modal-handle{
+    display: none;
+}
