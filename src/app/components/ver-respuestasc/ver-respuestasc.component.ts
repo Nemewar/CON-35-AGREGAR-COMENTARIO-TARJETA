@@ -11,4 +11,9 @@ export class VerRespuestascComponent implements OnInit {
 
   ngOnInit() {}
 
+
+  mostrarMensaje(){
+    console.log("Hola mundo")
+  }
+
 }

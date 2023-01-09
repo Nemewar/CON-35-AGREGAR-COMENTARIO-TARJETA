@@ -1,15 +1,44 @@
-<ion-modal
-  trigger="open-modal5"
-  [initialBreakpoint]="0.82"
-  [breakpoints]="[0, 0.25, 0.5, 0.75]"
+<ion-modal 
+  trigger="open-modal5" 
+  [initialBreakpoint]="0.91" 
+  [breakpoints]="[0, 0.25, 0.5, 0.75]" 
   handleBehavior="cycle"
 >
   <ng-template>
+    <ion-header class="ion-no-border">
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button class="b-start">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="9.58333" stroke="black" stroke-opacity="0.12" stroke-width="0.833333" />
+              <path d="M8.25 11.7727L10.897 14.5L15.75 9.5" stroke="black" stroke-opacity="0.12" stroke-width="0.833333"
+                stroke-linecap="round" />
+            </svg>
+            <p class="ion-text-capitalize">Resolver</p>
+          </ion-button>
+        </ion-buttons>
+    
+        <ion-buttons slot="end">
+          <ion-button class="b-end">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4 14C5.10457 14 6 13.1046 6 12C6 10.8954 5.10457 10 4 10C2.89543 10 2 10.8954 2 12C2 13.1046 2.89543 14 4 14Z"
+                fill="black" fill-opacity="0.38" />
+              <path
+                d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
+                fill="black" fill-opacity="0.38" />
+              <path
+                d="M20 14C21.1046 14 22 13.1046 22 12C22 10.8954 21.1046 10 20 10C18.8954 10 18 10.8954 18 12C18 13.1046 18.8954 14 20 14Z"
+                fill="black" fill-opacity="0.38" />
+            </svg>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
     <ion-content>
-
       <div class="main">
         <div class="comentario-principal">
-    
+
           <img src="/assets/sheyla.png" />
           <div class="comentario-principal-derecha">
             <p class="autor">Sheyla Gavidia</p>
@@ -22,17 +51,17 @@
               <img src="/assets/facturacion.png">
               <img src="/assets/facturacion.png">
             </div>
-            <p>loren ipsum loren <span class="time-comment">hace 1 seg</span></p> 
-            <p>loren ipsum loren lorem ipsum loren <br/>
-               lorem ipsum <span class="time-comment">hace 1 seg</span>
+            <p>loren ipsum loren <span class="time-comment">hace 1 seg</span></p>
+            <p>loren ipsum loren lorem ipsum loren <br />
+              lorem ipsum <span class="time-comment">hace 1 seg</span>
             </p>
           </div>
-    
-    
+
+
         </div>
-    
+
         <div class="comentario-principal">
-    
+
           <img src="/assets/homero.png" />
           <div class="comentario-principal-derecha">
             <p class="autor">Homero Lopez</p>
@@ -45,12 +74,11 @@
             </div>
             <p class="response">Responder</p>
           </div>
-    
-    
+
         </div>
-    
+
         <div class="comentario-principal">
-    
+
           <img src="/assets/valentin.png" />
           <div class="comentario-principal-derecha">
             <p class="autor">Valentin Mamani</p>
@@ -58,18 +86,53 @@
               revisar la información del cliente ya está
             </p>
           </div>
-    
-    
+
+
         </div>
-    
+
       </div>
-    
+
       <footer>
-        <p>Responder</p>
+        <p id="open-modal7" expand="block">Responder</p>
+        <ion-modal
+          trigger="open-modal7"
+          [initialBreakpoint]="0.50"
+          [breakpoints]="[0, 0.25, 0.5, 0.75]"
+          handleBehavior="none"
+        >
+          <ng-template>
+            <ion-header>
+
+            </ion-header>
+            <ion-content>
+
+              <div class="main2">
+                <p id = "open-modal4">Deja un comentario</p>
+                <div class="iconos">
+                  <img src="/assets/iconos-comentario/Bold.svg" />
+                  <img src="/assets/iconos-comentario/Cursiva.svg" />
+                  <img src="/assets/iconos-comentario/fi-rr-list.svg" />
+                  <img src="/assets/iconos-comentario/Image.svg" />
+                  <img src="/assets/iconos-comentario/Camera.svg" />
+                  <img
+                      id = "open-modal2"
+                      expand="block" src="/assets/iconos-comentario/arrobaSinFondo.svg" 
+                  />
+                  <img src="/assets/iconos-comentario/clip.svg" />
+                </div>
+              </div>
+              <img src="/assets/keyboard.png" />
+              <app-escribir-comentarioc style="display: none;"></app-escribir-comentarioc>
+              <app-lista-usuariosc style="display: none;"></app-lista-usuariosc>
+              
+            
+            </ion-content>
+          </ng-template>
+        </ion-modal>
       </footer>
-    
-    
-    
+      
+
+
     </ion-content>
   </ng-template>
 </ion-modal>
