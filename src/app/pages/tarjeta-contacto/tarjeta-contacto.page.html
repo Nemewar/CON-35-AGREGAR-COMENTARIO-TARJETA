@@ -75,7 +75,8 @@
     </div>
 
     <!-- Comentarios -->
-    <div class="card-comentarios">
+    <div class="card-comentarios" id="open-modal5">
+      <app-ver-respuestasc></app-ver-respuestasc>
       <div class="card-header">
         <p>COMENTARIOS</p>
         <img src="/assets/menu_dots.svg" alt="menu">
@@ -199,20 +200,11 @@
       <div class="button-arrow">
         <img src="/assets/arrow_left_2.svg" alt="Arrow Left">
       </div>
-      <!-- <p>Agrega un comentario</p> -->
-      <!-- <ion-button id="open-modal" expand="block">Agrega un comentario</ion-button> -->
       <p id="open-modal" expand="block">Agrega un comentario</p>
-      <ion-modal trigger="open-modal" [initialBreakpoint]="0.52" [breakpoints]="[0, 0.25, 0.5, 0.75]"
-        handleBehavior="cycle">
-        <ng-template>
-          <app-dejar-comentario></app-dejar-comentario>
-        </ng-template>
-      </ion-modal>
+      <app-dejar-comentario2></app-dejar-comentario2>
       <div class="button-plus">
         <img src="/assets/plus.svg" alt="plus">
       </div>
     </div>
   </footer>
-
-  <ion-item>Hola mundo</ion-item>
 </ion-content>

@@ -30,8 +30,23 @@ ion-content{
     height: 20px;
 }
 
-
-
-.modal-handle{
-    display: none;
+//quitar el borde superior
+ion-header{
+    display: inline;
 }
+
+//darle un borde superior al modal
+ion-content{
+    border-top: 1px solid #EEEEEE;
+}
+
+//quitar el fondo oscuro 
+ion-modal {
+    --backdrop-opacity: var(--ion-backdrop-opacity, 0);
+}
+
+//quitar el el boton por defecto del sheet modal en la parte de arriba
+ion-modal::part(handle){
+    display: none;
+  }
+  

@@ -8,7 +8,6 @@ import { TarjetaContactoPageRoutingModule } from './tarjeta-contacto-routing.mod
 
 import { TarjetaContactoPage } from './tarjeta-contacto.page';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { DejarComentarioPageModule } from '../dejar-comentario/dejar-comentario.module';
 
 @NgModule({
   imports: [
@@ -17,7 +16,6 @@ import { DejarComentarioPageModule } from '../dejar-comentario/dejar-comentario.
     IonicModule,
     TarjetaContactoPageRoutingModule,
     ComponentsModule,
-    DejarComentarioPageModule
   ],
   declarations: [TarjetaContactoPage]
 })

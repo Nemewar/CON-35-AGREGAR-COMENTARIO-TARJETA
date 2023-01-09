@@ -117,3 +117,13 @@ footer p{
 .response{
     color: gray;
 }
+
+//quitar el borde superior
+ion-header{
+    display: inline;
+}
+
+//quitar el el boton por defecto del sheet modal en la parte de arriba
+ion-modal::part(handle){
+    display: none;
+  }

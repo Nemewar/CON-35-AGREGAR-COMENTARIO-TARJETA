@@ -1,0 +1,60 @@
+<ion-modal
+  trigger="open-modal2"
+  [initialBreakpoint]="0.75"
+  [breakpoints]="[0, 0.25, 0.5, 0.75]"
+  handleBehavior="none"
+>
+  <ng-template>
+    <ion-content>
+
+      <div class="lista">
+        <div class="card">
+          <img src="/assets/lista-personas-comentarios/1.png" />
+          <p>Jhordan</p>
+        </div>
+        <div class="card">
+          <img src="/assets/lista-personas-comentarios/2.png" />
+          <p>Wilfredo Díaz</p>
+        </div>
+        <div class="card">
+            <img src="/assets/lista-personas-comentarios/3.png" />
+            <p>Oscar Ortiz</p>
+        </div>
+        <div class="card">
+          <img src="/assets/lista-personas-comentarios/4.png" />
+          <p>Sheyla</p>
+        </div>
+        <div id = "open-modal3" class="card link" routerLink="../escribir-usuario">
+          <img src="/assets/lista-personas-comentarios/5.png" />
+          <p>Isaí Ortiz</p>
+        </div>
+        <app-escribir-usuarioc></app-escribir-usuarioc>
+      </div>
+    
+      <hr class="linea" />
+    
+      <div class="selector">
+        <img src="/assets/iconos-comentario/arrobaAzul.svg">
+        <p>Isa</p>
+      </div>
+    
+      <div class="lista-iconos">
+        <div class="iconos">
+          <img src="/assets/iconos-comentario/Bold.svg" />
+          <img src="/assets/iconos-comentario/Cursiva.svg" />
+          <img src="/assets/iconos-comentario/listaSeleccionada.svg" />
+          <img src="/assets/iconos-comentario/Image.svg" />
+          <img src="/assets/iconos-comentario/Camera.svg" />
+          <img src="/assets/iconos-comentario/arrobaSinFondo.svg" />
+          <img src="/assets/iconos-comentario/clip.svg" />
+          <img src="/assets/iconos-comentario/Send.svg" />
+        </div>
+      </div>
+    
+      <div>
+        <img src="/assets/keyboard.png" />
+      </div>
+    
+    </ion-content>
+  </ng-template>
+</ion-modal>

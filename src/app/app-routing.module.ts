@@ -3,28 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'dejar-comentario',
-    loadChildren: () => import('./pages/dejar-comentario/dejar-comentario.module').then( m => m.DejarComentarioPageModule)
-  },
-  {
-    path: 'lista-usuarios',
-    loadChildren: () => import('./pages/lista-usuarios/lista-usuarios.module').then( m => m.ListaUsuariosPageModule)
-  },
-  {
-    path: 'escribir-usuario',
-    loadChildren: () => import('./pages/escribir-usuario/escribir-usuario.module').then( m => m.EscribirUsuarioPageModule)
-  },
-  {
-    path: 'ver-respuestas',
-    loadChildren: () => import('./pages/ver-respuestas/ver-respuestas.module').then( m => m.VerRespuestasPageModule)
-  },
-  {
-    path: 'escribir-comentario',
-    loadChildren: () => import('./pages/escribir-comentario/escribir-comentario.module').then( m => m.EscribirComentarioPageModule)
-  },
-  {
     path: '',
-    redirectTo: 'dejar-comentario',
+    redirectTo: 'tarjeta-contacto',
     pathMatch: 'full'
   },
   {
