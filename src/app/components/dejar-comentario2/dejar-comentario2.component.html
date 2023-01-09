@@ -1,6 +1,6 @@
 <ion-modal
   trigger="open-modal"
-  [initialBreakpoint]="0.53"
+  [initialBreakpoint]="0.50"
   [breakpoints]="[0, 0.25, 0.5, 0.75]"
   handleBehavior="none"
 >
@@ -12,7 +12,6 @@
 
       <div class="main">
         <p id = "open-modal4"routerLink="../escribir-comentario">Deja un comentario</p>
-        <app-escribir-comentarioc></app-escribir-comentarioc>
         <div class="iconos">
           <img src="/assets/iconos-comentario/Bold.svg" />
           <img src="/assets/iconos-comentario/Cursiva.svg" />
@@ -27,7 +26,8 @@
         </div>
       </div>
       <img src="/assets/keyboard.png" />
-      <app-lista-usuariosc></app-lista-usuariosc>
+      <app-escribir-comentarioc style="display: none;"></app-escribir-comentarioc>
+      <app-lista-usuariosc style="display: none;"></app-lista-usuariosc>
       
     
     </ion-content>

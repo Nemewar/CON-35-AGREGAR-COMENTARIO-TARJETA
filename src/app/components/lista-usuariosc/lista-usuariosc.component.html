@@ -1,6 +1,6 @@
 <ion-modal
   trigger="open-modal2"
-  [initialBreakpoint]="0.75"
+  [initialBreakpoint]="0.83"
   [breakpoints]="[0, 0.25, 0.5, 0.75]"
   handleBehavior="none"
 >
@@ -24,11 +24,14 @@
           <img src="/assets/lista-personas-comentarios/4.png" />
           <p>Sheyla</p>
         </div>
-        <div id = "open-modal3" class="card link" routerLink="../escribir-usuario">
+        <div 
+          (click)="ocultarModal()"
+          id = "open-modal3" class="card link" routerLink="../escribir-usuario"
+          >
           <img src="/assets/lista-personas-comentarios/5.png" />
           <p>Isaí Ortiz</p>
         </div>
-        <app-escribir-usuarioc></app-escribir-usuarioc>
+        <app-escribir-usuarioc style="display: none;"></app-escribir-usuarioc>
       </div>
     
       <hr class="linea" />
