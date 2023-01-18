@@ -39,3 +39,22 @@ body{
     visibility: hidden;
     background-color: blue;
 }
+
+
+.dark{
+    --bg: #05050F;
+    --svgBg: #5B6793;
+    --colorPrimary: #FFFFFF;
+    --menuEliminar: rgba(255, 255, 255, 0.4);
+}
+
+.light{
+    --bg: #FFFFFF;
+    --svgBg: #757575;
+    --colorPrimary: #000000;
+    --menuEliminar: rgba(0, 0, 0, 0.38);
+}
+
+body{
+    background-color: var(--bg);
+}

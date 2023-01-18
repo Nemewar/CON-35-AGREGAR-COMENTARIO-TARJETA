@@ -5,8 +5,9 @@ ion-content{
 .lista-img{
     display: flex;
     gap: 10px;
-    margin-left: 24px;
-    margin-top: 24px;
+    padding-left: 24px;
+    // margin-left: 24px;
+    // margin-top: 24px;
 }
 
 .lista-img img{
@@ -20,25 +21,72 @@ ion-content{
 
 .lista-iconos {
     margin-top: 12px;
-    margin-bottom: 12px;
+    // margin-bottom: 12px;
 }
+
+
 
 
 .iconos {
     display: flex;
+    align-items: center;
     gap: 22px;
     padding: 12px 24px;
 }
+
+.main{
+    color: var(--colorPrimary)
+}
+
+
+
+
+.contenedor{
+    padding-top: 24px;
+    padding-bottom: 12px;
+    background-color: var(--bg);
+}
+
+
+@media(min-width:391px){
+
+    .img-keyboard{
+        width: 100%;
+    }
+
+    ion-modal::part(content){
+        height: 82.5%;
+        width: 80%;
+    }
+
+    //para el .modal-shadow
+    ion-modal{
+        // .modal-shadow{
+        //     height: 62% !important;
+        // }
+    
+        --max-height: 82.5% !important;
+        --max-width: 80% !important;
+    }
+
+}
+
 
 //quitar el borde superior
 ion-header{
     display: inline;
 }
 
-//darle un borde superior al modal
+//darle un borde superior al modal//para light
 ion-content{
     border-top: 1px solid #EEEEEE;
 }
+
+
+// //darle un borde superior al modal//para dark
+// ion-content{
+//     border-top: 0.5px solid #1B1F3C;
+// }
 
 //quitar el fondo oscuro 
 ion-modal {
@@ -49,3 +97,59 @@ ion-modal {
 ion-modal::part(handle){
     display: none;
   }
+
+  
+.svg1{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/Bold.svg);
+    mask: url(/assets/iconos-comentario/Bold.svg);
+    height: 20px;
+}
+
+.svg2{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/Cursiva.svg);
+    mask: url(/assets/iconos-comentario/Cursiva.svg);
+    height: 20px;
+}
+.svg3{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/Image.svg);
+    mask: url(/assets/iconos-comentario/Image.svg);
+    height: 20px;
+}
+.svg4{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/Camera.svg);
+    mask: url(/assets/iconos-comentario/Camera.svg);
+    height: 20px;
+}
+.svg5{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/arrobaSinFondo.svg);
+    mask: url(/assets/iconos-comentario/arrobaSinFondo.svg);
+    height: 20px;
+}
+
+.svg6{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/clip.svg);
+    mask: url(/assets/iconos-comentario/clip.svg);
+    height: 20px;
+}
+
+.svg7{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/clip.svg);
+    mask: url(/assets/iconos-comentario/clip.svg);
+    height: 20px;
+}
+
+.svg8{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/clip.svg);
+    mask: url(/assets/iconos-comentario/clip.svg);
+    height: 20px;
+}
+
+

@@ -11,4 +11,14 @@ export class EscribirComentariocComponent implements OnInit {
 
   ngOnInit() {}
 
+  esLight(): boolean {
+    console.log("Hola")
+    if (document.querySelector("body")?.classList.contains("light")) {
+      return true;
+    } else {
+      return false;
+    }
+
+  }
+
 }

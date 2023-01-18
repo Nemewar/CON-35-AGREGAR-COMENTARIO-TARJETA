@@ -1,6 +1,6 @@
 <ion-modal
   trigger="open-modal"
-  [initialBreakpoint]="0.50"
+  [initialBreakpoint]="0.49"
   [breakpoints]="[0, 0.25, 0.5, 0.75]"
   handleBehavior="none"
 >
@@ -13,19 +13,43 @@
       <div class="main">
         <p id = "open-modal4">Deja un comentario</p>
         <div class="iconos">
-          <img src="/assets/iconos-comentario/Bold.svg" />
-          <img src="/assets/iconos-comentario/Cursiva.svg" />
-          <img src="/assets/iconos-comentario/fi-rr-list.svg" />
-          <img src="/assets/iconos-comentario/Image.svg" />
-          <img src="/assets/iconos-comentario/Camera.svg" />
-          <img
-               id = "open-modal2"
-               expand="block" src="/assets/iconos-comentario/arrobaSinFondo.svg" 
-          />
+          <div class="svg1">
+            <img src="/assets/iconos-comentario/Bold.svg"/>
+          </div>
+          <div class="svg2">
+            <img src="/assets/iconos-comentario/Cursiva.svg" />
+          </div>
+          <div class="svg3">
+            <img src="/assets/iconos-comentario/fi-rr-list.svg" />
+          </div>
+          <div class="svg4">
+            <img src="/assets/iconos-comentario/Image.svg" />
+          </div>
+          <div class="svg5">
+            <img src="/assets/iconos-comentario/Camera.svg" />
+          </div>  
+          <div class="svg6">
+            <img
+                id = "open-modal2"
+                expand="block" src="/assets/iconos-comentario/arrobaSinFondo.svg" 
+            />
+          </div>
+          <div class="svg7">
           <img src="/assets/iconos-comentario/clip.svg" />
+          </div>
         </div>
       </div>
-      <img src="/assets/keyboard.png" />
+      <img class="keyboard"
+      *ngIf="esLight();else esDark"
+      src="/assets/keyboard.png" 
+      />
+      <ng-template #esDark>
+        <img class="keyboard"
+          src="/assets/keyboardDark.png" 
+        />
+      </ng-template>
+      
+      
       <app-escribir-comentarioc style="display: none;"></app-escribir-comentarioc>
       <app-lista-usuariosc style="display: none;"></app-lista-usuariosc>
       

@@ -1,6 +1,5 @@
 
 
-
 ion-content{
     font-family: 'Abyssinica SIL', serif;
 
@@ -11,9 +10,12 @@ ion-content p{
     line-height: 24px;
 }
 
+//agregarle radio al header
 ion-toolbar {
     --color: #ffffff;
-    --background: #ffffff;
+    --background: var(--bg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
@@ -30,14 +32,22 @@ ion-buttons p{
 }
 
 .b-start{
-    margin-left: 16px;
-    margin-top: 24px;
+    margin-left: 6px;
+    margin-top: 15px;
 }
 
 .b-end{
-    margin-right: 16px;
-    margin-top: 24px;
+    margin-right: 7px;
+    margin-top: 15px;
 }
+
+.contenedor-comentarios{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
 
 .comentario-principal{
     margin-left: 24px;
@@ -75,22 +85,25 @@ ion-buttons p{
 }
 
 .main{
-    margin-top: 32px;
+    padding-top: 32px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background-color: var(--bg);
 }
 
 footer{
-    border-top: 0.5px solid #F5F5F5;
+    border-top: 0.5px solid #1B1F3C;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    background-color: var(--bg);
 }
 
 footer p{
-    margin-top: 24px;
-    margin-left: 24px;
-    margin-bottom: 40px;
+    margin: 0;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-bottom: 40px;
     color: gray;
 }
 
@@ -128,10 +141,21 @@ ion-modal::part(handle){
     display: none;
   }
 
-  .main2{
+
+//para quitar el scroll
+ion-content{
+    --overflow: hidden;
+}
+
+
+/* SEGUNDO MODAL//SEGUNDO MODAL//SEGUNDO MODAL//SEGUNDO MODAL/SEGUNDO MODAL
+//SEGUNDO MODAL//SEGUNDO MODAL//SEGUNDO MODAL//SEGUNDO MODAL/SEGUNDO MODAL*/
+.main2{
     display: flex;
     flex-direction: column;
     gap: 32px;
+    background-color: var(--bg);
+    border-top: 0.5px solid #1B1F3C;
 }
 
 
@@ -156,3 +180,96 @@ ion-modal::part(handle){
 .main2 .iconos img{
     height: 20px;
 }
+
+.comentario-principal p{
+    color: var(--colorPrimary);
+    margin:0;
+}
+
+
+
+@media(min-width:391px){
+
+
+    .modal2 .contenedor-img-keyboard img{
+        width: 100%;
+    }
+
+    .modal2::part(content){
+        margin-bottom: 200px;
+    }
+
+    
+
+}
+
+
+
+/* 
+para el nuevo modal que aparece en el centro
+*/
+ion-modal {
+    --height: 57%;
+    --border-radius: 0px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+}
+
+
+
+//responsive a tableta
+@media(min-width:391px){
+    .contenedor-comentarios{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .comentario-principal{
+        width: 333.2px;
+    }
+
+    ion-modal::part(content){
+        width: 80%;
+    }
+
+    ion-modal{
+        --max-width:80% !important;
+    }
+
+    //.modal-wrapper
+    // ion-modal::part(content){
+    //     height: 62%;
+    // }
+
+    //para el .modal-shadow
+    // ion-modal{
+    //     // .modal-shadow{
+    //     //     height: 62% !important;
+    //     // }
+    
+    //     --max-height: 62% !important;
+    // }
+}
+
+@media(max-width:391px){
+    //.modal-wrapper
+    ion-modal::part(content){
+        height: 91.5%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+
+
+
+  
+
+
+
+

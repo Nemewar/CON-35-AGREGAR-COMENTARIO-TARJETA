@@ -1,46 +1,70 @@
-<ion-modal
-  trigger="open-modal4"
-  [initialBreakpoint]="0.69"
-  [breakpoints]="[0, 0.25, 0.5, 0.75]"
-  handleBehavior="none"
->
+<ion-modal trigger="open-modal4" [initialBreakpoint]="0.67" [breakpoints]="[0, 0.25, 0.5, 0.75]" handleBehavior="none">
   <ng-template>
     <ion-content>
-      <div class="lista-img">
-        <img src="/assets/escribir-comentario/1.png">
-        <img src="/assets/escribir-comentario/2.png">
-        <img src="/assets/escribir-comentario/3.png">
-      </div>
-    
-      <div class="main">
-        <p><b>Esto es un bolt</b></p>
-        <p><i>Texto Cursiva</i></p>
-        <ul>
-          <li>Lista 1</li>
-          <li>Lista 2</li>
-        </ul>
-      </div>
-    
-      <div class="lista-iconos">
-        <div class="iconos">
-          <img src="/assets/iconos-comentario/Bold.svg" />
-          <img src="/assets/iconos-comentario/Cursiva.svg" />
-          <img src="/assets/iconos-comentario/listaSeleccionada.svg" />
-          <img src="/assets/iconos-comentario/Image.svg" />
-          <img src="/assets/iconos-comentario/Camera.svg" />
-          <img src="/assets/iconos-comentario/arrobaSinFondo.svg" />
-          <img src="/assets/iconos-comentario/clip.svg" />
-          <img src="/assets/iconos-comentario/Send.svg" />
+      <div class="contenedor" >
+        <div class="lista-img">
+          <img src="/assets/escribir-comentario/1.png">
+          <img src="/assets/escribir-comentario/2.png">
+          <img src="/assets/escribir-comentario/3.png">
+        </div>
+
+        <div class="main">
+          <p><b>Esto es un bolt</b></p>
+          <p><i>Texto Cursiva</i></p>
+          <ul>
+            <li>Lista 1</li>
+            <li>Lista 2</li>
+          </ul>
+        </div>
+
+        <div class="lista-iconos">
+          <div class="iconos">
+            <div class="svg1">
+              <img style="opacity: 0;" src="/assets/iconos-comentario/Bold.svg" />
+            </div>
+            <div class="svg2">
+              <img style="opacity: 0;" src="/assets/iconos-comentario/Cursiva.svg" />
+            </div>
+
+            <img src="/assets/iconos-comentario/listaSeleccionada.svg" />
+
+            <div class="svg3">
+              <img style="opacity: 0;" src="/assets/iconos-comentario/Image.svg"/>
+            </div>
+            <div class="svg4">
+              <img style="opacity: 0;" src="/assets/iconos-comentario/Camera.svg" />
+            </div>
+            <div class="svg5">
+              <img style="opacity: 0;" src="/assets/iconos-comentario/arrobaSinFondo.svg" />
+            </div>
+            <div class="svg6">
+              <img style="opacity: 0;" src="/assets/iconos-comentario/clip.svg" />
+            </div>
+            
+            <img src="/assets/iconos-comentario/Send.svg"/>
+            
+          </div>
         </div>
       </div>
-    
+
       <div>
-        <img src="/assets/keyboard.png"/>
+          <img 
+          class="img-keyboard"
+        *ngIf="esLight();else esDark"
+        src="/assets/keyboard.png" 
+        />
+        <ng-template #esDark>
+          <img 
+            class="img-keyboard"
+            src="/assets/keyboardDark.png" 
+          />
+        </ng-template>
       </div>
-    
+
+
     </ion-content>
-    
-    
-    
+
+
+
   </ng-template>
 </ion-modal>

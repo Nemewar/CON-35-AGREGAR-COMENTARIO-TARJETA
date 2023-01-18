@@ -11,4 +11,13 @@ export class EscribirUsuariocComponent implements OnInit {
 
   ngOnInit() {}
 
+  esLight(): boolean {
+    if (document.querySelector("body")?.classList.contains("light")) {
+      return true;
+    } else {
+      return false;
+    }
+
+  }
+
 }

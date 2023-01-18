@@ -1,11 +1,11 @@
 .lista-iconos {
     margin-top: 12px;
-    margin-bottom: 12px;
 }
 
 
 .iconos {
     display: flex;
+    align-items: center;
     gap: 22px;
     padding: 12px 24px;
 }
@@ -14,9 +14,13 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-top: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.cont-seleccionado p{
+    margin: 0;
 }
 
 
@@ -34,6 +38,38 @@
     font-weight: bold;
 }
 
+
+
+.main{
+    background-color: var(--bg);
+}
+
+
+@media(min-width:391px){
+    .img-keyboard{
+        width: 100%;
+    }
+
+    ion-modal::part(conten){
+        width: 80%;
+        height: 86.5%;
+    }
+
+    //para el .modal-shadow
+    ion-modal{
+        // .modal-shadow{
+        //     height: 62% !important;
+        // }
+    
+        --max-height: 86.5% !important;
+        --max-width: 80% !important;
+    }
+
+
+}
+
+
+
 //quitar el borde superior
 ion-header{
     display: inline;
@@ -44,6 +80,12 @@ ion-content{
     border-top: 1px solid #EEEEEE;
 }
 
+// darle un borde superior al modal//para dark
+// ion-content{
+//     border-top: 0.5px solid #1B1F3C;
+// }
+
+
 //quitar el fondo oscuro 
 ion-modal {
     --backdrop-opacity: var(--ion-backdrop-opacity, 0);
@@ -52,4 +94,57 @@ ion-modal {
 //quitar el el boton por defecto del sheet modal en la parte de arriba
 ion-modal::part(handle){
     display: none;
-  }
+}
+
+  .svg1{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/Bold.svg);
+    mask: url(/assets/iconos-comentario/Bold.svg);
+    height: 20px;
+}
+
+.svg2{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/Cursiva.svg);
+    mask: url(/assets/iconos-comentario/Cursiva.svg);
+    height: 20px;
+}
+.svg3{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/Image.svg);
+    mask: url(/assets/iconos-comentario/Image.svg);
+    height: 20px;
+}
+.svg4{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/Camera.svg);
+    mask: url(/assets/iconos-comentario/Camera.svg);
+    height: 20px;
+}
+.svg5{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/arrobaSinFondo.svg);
+    mask: url(/assets/iconos-comentario/arrobaSinFondo.svg);
+    height: 20px;
+}
+
+.svg6{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/clip.svg);
+    mask: url(/assets/iconos-comentario/clip.svg);
+    height: 20px;
+}
+
+.svg7{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/clip.svg);
+    mask: url(/assets/iconos-comentario/clip.svg);
+    height: 20px;
+}
+
+.svg8{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/clip.svg);
+    mask: url(/assets/iconos-comentario/clip.svg);
+    height: 20px;
+}

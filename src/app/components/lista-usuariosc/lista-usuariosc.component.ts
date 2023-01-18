@@ -26,4 +26,14 @@ export class ListaUsuarioscComponent implements OnInit {
     this.modalCtrl.dismiss();
   }
 
+  esLight(): boolean {
+    console.log("Hola")
+    if (document.querySelector("body")?.classList.contains("light")) {
+      return true;
+    } else {
+      return false;
+    }
+
+  }
+
 }

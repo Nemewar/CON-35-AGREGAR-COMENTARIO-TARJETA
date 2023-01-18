@@ -5,6 +5,7 @@ ion-content{
     display: flex;
     flex-direction: column;
     gap: 32px;
+    background-color: var(--bg);
 }
 
 
@@ -28,7 +29,9 @@ ion-content{
 
 .main .iconos img{
     height: 20px;
+    opacity: 0;
 }
+
 
 //quitar el borde superior
 ion-header{
@@ -49,4 +52,81 @@ ion-modal {
 ion-modal::part(handle){
     display: none;
   }
+
+
+@media(min-width:391px){
+    ion-modal::part(content){
+        height: 63.5%;
+        width: 80%;
+        margin-bottom: 160px;
+    }
+
+    .keyboard{
+        width: 100%;
+    }
+
+    //para el .modal-shadow
+    ion-modal{
+        // .modal-shadow{
+        //     height: 62% !important;
+        // }
+    
+        --max-height: 63.5% !important;
+        --max-width: 80% !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+.svg1{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/Bold.svg);
+    mask: url(/assets/iconos-comentario/Bold.svg);
+    height: 20px;
+}
+
+.svg2{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/Cursiva.svg);
+    mask: url(/assets/iconos-comentario/Cursiva.svg);
+    height: 20px;
+}
+.svg3{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/fi-rr-list.svg);
+    mask: url(/assets/iconos-comentario/fi-rr-list.svg);
+    height: 20px;
+}
+.svg4{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/Image.svg);
+    mask: url(/assets/iconos-comentario/Image.svg);
+    height: 20px;
+}
+.svg5{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/Camera.svg);
+    mask: url(/assets/iconos-comentario/Camera.svg);
+    height: 20px;
+}
+
+.svg6{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/arrobaSinFondo.svg);
+    mask: url(/assets/iconos-comentario/arrobaSinFondo.svg);
+    height: 20px;
+}
+
+.svg7{
+    background-color: var(--svgBg);
+    -webkit-mask: url(/assets/iconos-comentario/clip.svg);
+    mask: url(/assets/iconos-comentario/clip.svg);
+    height: 20px;
+}
   
